@@ -1,0 +1,152 @@
+.Slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #D183A5;
+    background-image: url(../Bild/Slotss.jpg);
+    background-size: cover;
+}
+
+.Spiel-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 70%;
+}
+
+.Maschine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    width: 90%;
+    height: 65%;
+    background-color: #FEB3CF;
+    border: 2px solid rgb(251, 145, 255);
+}
+
+.Interation_masch {
+    background-color: rgb(143, 238, 238);
+    font-size: 2vw;
+    width: 15%;
+    height: 100%;
+}
+
+.Interation_masch_but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+    width: 100%;
+    border: 2px solid #aed3f5;
+}
+
+.Slot_maschine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    width: 70%;
+    height: 90%;
+    border: 2px solid white;
+}
+
+.Slots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid white;
+    height: 100%;
+    width: 33%;
+}
+
+#S-1 {
+    transition: all 0.25s ease-in;
+}
+
+#S-2 {
+    transition: all 0.75s ease-in;
+}
+
+#S-3 {
+    transform: all 1.25s ease-in;
+}
+
+.Slots_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97%;
+    width: 97%;
+	box-shadow: 0 0 50px #777;
+}
+
+.Nach {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    height: 90%;
+    height: 90%;
+}
+
+.Bild_id {
+    height: 3%;
+    width: 3%;
+    color: transparent;
+    font-size: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .Spiel-1{
+        height: 100%;
+        width: 100%;
+    }
+
+    .Maschine {
+        height: 100%;
+        width: 100%;
+    }
+
+    .Interation_masch {
+        background-color: rgb(143, 238, 238);
+        font-size: 3.5vw;
+        width: 10%;
+        height: 100%;
+    }
+
+    .Slot_maschine {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vw;
+        width: 80%;
+        height: 40%;
+        border: 2px solid white;
+    }
+
+    #coins{
+        writing-mode: horizontal-tb;
+        font-size: 5vw;
+        font-weight: bold;
+    }
+
+    #wette{
+        writing-mode: horizontal-tb;
+        font-size: 5vw;
+        font-weight: bold;
+    }
+
+    .Interation_masch_but{
+        writing-mode: vertical-rl;
+	    text-orientation: upright;
+    }
+
+    .Nach {
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+    }
+} 

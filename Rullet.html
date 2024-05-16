@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="Bild/Doctor.ico" type="image/x-icon"/>
+    <Link rel="stylesheet" href="CSS/Mein.css"/>
+    <title>D o c t o r</title>
+</head>
+<body>
+    <div class="der_Tisch">
+        <div id="Ruletka" class="Ruletka">
+            <div class="Spiel">
+                <div class="img_Rul phone" id="img_Rul">
+                    <div class="Rul_Boll" id="Rul_Boll_0">
+                        <img id="roll" src="./Bild/Ruletka.png"/>
+                        <div class="Rul_Boll hide" id="Rul_Boll_4"></div>
+                    </div>
+                </div>
+                <div class="border"></div>
+                <table class="Ruletka_Horizon phone" id="Horizon">
+                    <tr class="#">
+                        <td onclick="sup('3','Red')" id="R3" class="tdd Red ">3</td>
+                        <td onclick="sup('6','Black')" id="B6" class="tdd Black">6</td>
+                        <td onclick="sup('9','Red')" id="R9" class="tdd Red">9</td>
+                        <td onclick="sup('12','Red')" id="R12" class="tdd Red">12</td>
+                        <td onclick="sup('15','Black')" id="B15" class="tdd Black">15</td>
+                        <td onclick="sup('18','Red')" id="R18" class="tdd Red">18</td>
+                        <td onclick="sup('21','Red')" id="R21" class="tdd Red">21</td>
+                        <td onclick="sup('24','Black')" id="B24" class="tdd Black">24</td>
+                        <td onclick="sup('27','Red')" id="R27" class="tdd Red">27</td>
+                        <td onclick="sup('30','Red')" id="R30" class="tdd Red">30</td>
+                        <td onclick="sup('33','Black')" id="B33" class="tdd Black">33</td>
+                        <td onclick="sup('36','Red')" id="R36" class="tdd Red">36</td>
+                        <td onclick="sup('Red','Red')" id="Red" class="tdd Red">Rd</td>
+                    </tr>
+                    <tr class="#">
+                        <td onclick="sup('2','Black')" id="B2" class="tdd Black">2</td>
+                        <td onclick="sup('5','Red')" id="R5" class="tdd Red">5</td>
+                        <td onclick="sup('8','Black')" id="B8" class="tdd Black">8</td>
+                        <td onclick="sup('11','Black')" id="B11" class="tdd Black">11</td>
+                        <td onclick="sup('14','Red')" id="R14" class="tdd Red">14</td>
+                        <td onclick="sup('17','Black')" id="B17" class="tdd Black">17</td>
+                        <td onclick="sup('20','Black')" id="B20" class="tdd Black">20</td>
+                        <td onclick="sup('23','Red')" id="R23" class="tdd Red">23</td>
+                        <td onclick="sup('26','Black')" id="B26" class="tdd Black">26</td>
+                        <td onclick="sup('29','Black')" id="B29" class="tdd Black">29</td>
+                        <td onclick="sup('32','Red')" id="R32" class="tdd Red">32</td>
+                        <td onclick="sup('35','Black')" id="B35" class="tdd Black">35</td>
+                        <td onclick="sup('Zero','Zero')" id="Zero" class="tdd Zero">0</td>
+                    </tr>
+                    <tr class="#">
+                        <td onclick="sup('1','Red')" id="R1" class="tdd Red">1</td>
+                        <td onclick="sup('4','Black')" id="B4" class="tdd Black">4</td>
+                        <td onclick="sup('7','Red')" id="R7" class="tdd Red">7</td>
+                        <td onclick="sup('10','Black')" id="B10" class="tdd Black">10</td>
+                        <td onclick="sup('13','Black')" id="B13" class="tdd Black">13</td>
+                        <td onclick="sup('16','Red')" id="R16" class="tdd Red">16</td>
+                        <td onclick="sup('19','Red')" id="R19" class="tdd Red">19</td>
+                        <td onclick="sup('22','Black')" id="B22" class="tdd Black">22</td>
+                        <td onclick="sup('25','Red')" id="R25" class="tdd Red">25</td>
+                        <td onclick="sup('28','Black')" id="B28" class="tdd Black">28</td>
+                        <td onclick="sup('31','Black')" id="B31" class="tdd Black">31</td>
+                        <td onclick="sup('34','Red')" id="R34" class="tdd Red">34</td>
+                        <td onclick="sup('Black','Black')" id="Black" class="tdd Black">Bk</td>
+                    </tr>  
+                </table>
+                <div class="Ruletka_Vertikal_div">
+                    <table class="Ruletka_Vertikal">
+                        <tr class="#">
+                            <td onclick="sup('1','Red')" id="R1" class="tdd Red">1</td>
+                            <td onclick="sup('2','Black')" id="B2" class="tdd Black">2</td>
+                            <td onclick="sup('3','Red')" id="R3" class="tdd Red">3</td>
+                            <td onclick="sup('4','Black')" id="B4" class="tdd Black">4</td>
+                            <td onclick="sup('5','Red')" id="R5" class="tdd Red">5</td>
+                        </tr>
+                        <tr class="#">
+                            <td onclick="sup('6','Black')" id="B6" class="tdd Black">6</td>
+                            <td onclick="sup('7','Red')" id="R7" class="tdd Red">7</td>
+                            <td onclick="sup('8','Black')" id="B8" class="tdd Black">8</td>
+                            <td onclick="sup('9','Red')" id="R9" class="tdd Red">9</td>
+                            <td onclick="sup('10','Black')" id="B10" class="tdd Black">10</td>
+                        </tr>
+                        <tr class="#">
+                            <td onclick="sup('11','Black')" id="B11" class="tdd Black">11</td>
+                            <td onclick="sup('12','Red')" id="R12" class="tdd Red">12</td>
+                            <td onclick="sup('13','Black')" id="B13" class="tdd Black">13</td>
+                            <td onclick="sup('14','Red')" id="R14" class="tdd Red">14</td>
+                            <td onclick="sup('15','Black')" id="B15" class="tdd Black">15</td>
+                        </tr>
+                        <tr class="#">
+                            <td onclick="sup('16','Red')" id="R16" class="tdd Red">16</td>
+                            <td onclick="sup('17','Black')" id="B17" class="tdd Black">17</td>
+                            <td onclick="sup('18','Red')" id="R18" class="tdd Red">18</td>
+                            <td onclick="sup('19','Red')" id="R19" class="tdd Red">19</td>
+                            <td onclick="sup('20','Black')" id="B20" class="tdd Black">20</td>
+                        </tr>
+                        <tr class="#">
+                            <td onclick="sup('21','Red')" id="R21" class="tdd Red">21</td>
+                            <td onclick="sup('22','Black')" id="B22" class="tdd Black">22</td>
+                            <td onclick="sup('23','Red')" id="R23" class="tdd Red">23</td>
+                            <td onclick="sup('24','Black')" id="B24" class="tdd Black">24</td>
+                            <td onclick="sup('25','Red')" id="R25" class="tdd Red">25</td>
+                        </tr>
+                        <tr class="#">
+                            <td onclick="sup('26','Black')" id="B26" class="tdd Black">26</td>
+                            <td onclick="sup('27','Red')" id="R27" class="tdd Red">27</td>
+                            <td onclick="sup('28','Black')" id="B28" class="tdd Black">28</td>
+                            <td onclick="sup('29','Black')" id="B29" class="tdd Black">29</td>
+                            <td onclick="sup('30','Red')" id="R30" class="tdd Red">30</td>
+                        </tr>
+                        <tr class="#">
+                            <td onclick="sup('31','Black')" id="B31" class="tdd Black">31</td>
+                            <td onclick="sup('32','Red')" id="R32" class="tdd Red">32</td>
+                            <td onclick="sup('33','Black')" id="B33" class="tdd Black">33</td>
+                            <td onclick="sup('34','Red')" id="R34" class="tdd Red">34</td>
+                            <td onclick="sup('35','Black')" id="B35" class="tdd Black">35</td>
+                        </tr>
+                        <tr class="#">
+                            <td onclick="sup('36','Red')" id="R36" class="tdd Red">36</td>
+                            <td onclick="sup('Red','Red')" id="Red" class="tdd Red">Rd</td>
+                            <td onclick="sup('Zero','Zero')" id="Zero" class="tdd Zero">0</td>
+                            <td onclick="sup('Black','Black')" id="Black" class="tdd Black">Bk</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="Interation">
+                    <div class="Inter  spinres" id="spinres"> </div>
+                    <div class="Inter  sch"> 
+                        <div class="Inter_sch" id="sch"></div>
+                        <div class="Inter_sch hide" id="sch_farbe"></div>
+                    </div>
+                    <div class="Inter wette_rul"> </div>
+                    <div onclick="wette_plus_rul()" class="Inter summ_+ But_t_rul But_t"> + </div>
+                    <div onclick="wette_minus_rul()" class="Inter  summ_- But_t_rul But_t"> - </div>
+                    <div class="Inter coins_rul"> </div>
+                    <div id="Inter_rul" onclick="spinn()" class="Inter But_t_rul But_t">Spin</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="JavaS/Ruletka.js"> </script>
+</body>
+</html>

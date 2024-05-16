@@ -1,0 +1,137 @@
+.Kenno {
+    height: 100%;
+    width: 15%;
+    background-color: #4D6F8A;
+}
+
+.colr {
+    color: #BE0D07;
+    color: #D84B37;
+    color: #4D6F8A;
+    color: #214D68;
+    color: #222224;
+    color: #646C6E;
+} 
+
+.Kenno_Logo {
+    height: 40%;
+    width: 100%;
+}
+
+.Kenno_Interaktion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5%;
+    height: 60%;
+    width: 100%;
+    background-color: aliceblue
+}
+
+.Nach {
+    margin: 5%;
+    height: 100%;
+    width: 20%;
+    writing-mode: vertical-rl;
+	text-orientation: upright;
+    color: #4D6F8A;
+    font-size: 3vw;
+}
+
+.Balls {
+    text-align: center;
+    height: 95%;
+    width: 30%;
+    background-color: #D84B37;
+}
+
+.Balls  td {
+    height: 10%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid #214D68;
+    background-color: bisque;
+}
+
+.Kenno_Midl {
+    height: 100%;
+    width: 50%;
+    background-color: #222224;
+}
+
+.Kenno_Table {
+    height: 80%;
+    width: 100%;
+    border: 2px solid #214D68;
+}
+
+.Kenno_Table  td {
+    border-radius: 40%;
+    text-align: center;
+    border: 2px solid white;
+    color: azure;
+    font-size: 2vw;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.Kenno_Midl_Interaktion {
+    height: 20%;
+    width: 100%;
+    background-color: cadetblue;
+    border: 2px solid white;
+}
+
+.Midl_Interaktion {
+    height: 100%;
+    width: 100%;
+    background-color: azure;
+}
+
+.plus {
+    font-size: 2vw;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33.3%;
+    width: 100%;
+    border: 2px solid #D84B37;
+    border-radius: 20%;
+    background: linear-gradient(90deg, rgba(0,155,255,0.4431897759103641) 0%, rgb(19, 27, 77) 65%, rgb(23, 77, 87) 100%);
+}
+
+
+.Midl_Interaktion td {
+    height: 100%;
+    width: 20%;
+    border: 2px solid black;
+}
+ 
+
+.tb {
+    text-align: center;
+    color: #D84B37;
+    background-color: #4D6F8A;
+    font-size: 1.32vw;
+}
+
+@media screen and (max-width: 768px) {
+    .Kenno_Midl {
+        width: 100%;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .phone_add {
+        display: block;
+    }       
+    
+    .Kenno_Table  td {
+        border-radius: 50%;
+        font-size: 4vw;
+    }
+} 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="Bild/Doctor.ico" type="image/x-icon"/>
+    <Link rel="stylesheet" href="CSS/Mein.css"/>
+    <title>D o c t o r</title>
+</head>
+<body>
+    <div class="der_Tisch">
+        <div class="B_jk">
+            <div class="Kart_platz">
+                <table class="Kart_platz_display">
+                    <tr class="Kart_platz_Croupier">
+                        <td class="td Croupier_inner phone"></td>
+                        <td class="td Croupier_inner">
+                            <div class="Croupier_inner_suit" id="C-1">Gruss</div>
+                            <div class="Croupier_inner_suit" id="C-2">Gruss</div>
+                            <div class="Croupier_inner_suit" id="C-3">Gruss</div>
+                            <div class="Croupier_inner_suit" id="C-4">Gruss</div>
+                            <div class="Croupier_inner_suit" id="C-5">Gruss</div>
+                        </td>
+                        <td id="Croupier" class="td Croupier_inner">Black</td>
+                        <td id="Nachricht" class="td Croupier_inner">Hallo</td>
+                        <td id="Spieler" class="td Croupier_inner">Jack</td>
+                        <td class="td Croupier_inner"></td>
+                        <td class="td Croupier_inner phone"></td>
+                    </tr> 
+                    <tr class="Kart_platz_Spieler">
+                        <td id="R33" class="td Croupier_inner phone">Black </br> Jack</td>
+                        <td onclick="chack1()" class="td Croupier_inner pointerr">
+                            <div class="Card_imj" id="">
+                                <img id="1-Gruss" src="Bild/poker_bunt.png" class="Card_imj_inner " alt="#">
+                                <img id="1-Hearts" src="Bild/CS (H).png" class="Card_imj_inner hide" alt="#">
+                                <img id="1-Diamonds" src="Bild/CS (D).png" class="Card_imj_inner hide" alt="#">
+                                <img id="1-Clubs" src="Bild/CS (C).png" class="Card_imj_inner hide" alt="#">
+                                <img id="1-Spades" src="Bild/CS (S).png" class="Card_imj_inner hide" alt="#">
+                            </div>
+                            <div class="Card_zahl" id="Card_1">NEU</div>
+                        </td>                        
+                        <td onclick="chack2()" class="td Croupier_inner pointerr">
+                            <div class="Card_imj" id="">
+                                <img id="2-Gruss" src="Bild/poker_bunt.png" class="Card_imj_inner " alt="#">
+                                <img id="2-Hearts" src="Bild/CS (H).png" class="Card_imj_inner hide" alt="#">
+                                <img id="2-Diamonds" src="Bild/CS (D).png" class="Card_imj_inner hide" alt="#">
+                                <img id="2-Clubs" src="Bild/CS (C).png" class="Card_imj_inner hide" alt="#">
+                                <img id="2-Spades" src="Bild/CS (S).png" class="Card_imj_inner hide" alt="#">
+                            </div>
+                            <div class="Card_zahl" id="Card_2">NEU</div>
+                        </td>                        
+                        <td onclick="chack3()" class="td Croupier_inner pointerr">
+                            <div class="Card_imj" id="">
+                                <img id="3-Gruss" src="Bild/poker_bunt.png" class="Card_imj_inner " alt="#">
+                                <img id="3-Hearts" src="Bild/CS (H).png" class="Card_imj_inner hide" alt="#">
+                                <img id="3-Diamonds" src="Bild/CS (D).png" class="Card_imj_inner hide" alt="#">
+                                <img id="3-Clubs" src="Bild/CS (C).png" class="Card_imj_inner hide" alt="#">
+                                <img id="3-Spades" src="Bild/CS (S).png" class="Card_imj_inner hide" alt="#">
+                            </div>
+                            <div class="Card_zahl" id="Card_3">NEU</div>
+                        </td>                        
+                        <td onclick="chack4()" class="td Croupier_inner pointerr">
+                            <div class="Card_imj" id="">
+                                <img id="4-Gruss" src="Bild/poker_bunt.png" class="Card_imj_inner " alt="#">
+                                <img id="4-Hearts" src="Bild/CS (H).png" class="Card_imj_inner hide" alt="#">
+                                <img id="4-Diamonds" src="Bild/CS (D).png" class="Card_imj_inner hide" alt="#">
+                                <img id="4-Clubs" src="Bild/CS (C).png" class="Card_imj_inner hide" alt="#">
+                                <img id="4-Spades" src="Bild/CS (S).png" class="Card_imj_inner hide" alt="#">
+                            </div>
+                            <div class="Card_zahl" id="Card_4">NEU</div>
+                        </td>                        
+                        <td onclick="chack5()" class="td Croupier_inner pointerr">
+                            <div class="Card_imj" id="">
+                                <img id="5-Gruss" src="Bild/poker_bunt.png" class="Card_imj_inner " alt="#">
+                                <img id="5-Hearts" src="Bild/CS (H).png" class="Card_imj_inner hide" alt="#">
+                                <img id="5-Diamonds" src="Bild/CS (D).png" class="Card_imj_inner hide" alt="#">
+                                <img id="5-Clubs" src="Bild/CS (C).png" class="Card_imj_inner hide" alt="#">
+                                <img id="5-Spades" src="Bild/CS (S).png" class="Card_imj_inner hide" alt="#">
+                            </div>
+                            <div class="Card_zahl" id="Card_5">NEU</div>
+                        </td>
+                        <td id="R21" class="td Croupier_inner phone">Black </br> Jack</td>
+                    </tr>
+                    <tr class="Kart_platz_Interaction">
+                        <td class="td Croupier_inner phone"></td>
+                        <td id="Rech" class="td Croupier_inner But_t">Noch</td>
+                        <td id="Pruf" class="td Croupier_inner But_t">Pruf</td>
+                        <td class="td Croupier_inner">
+                            <div onclick="wette_plus_bj()" class="Wette_BJ But_t "> + </div>
+                            <div onclick="wette_minus_bj()" class="Wette_BJ But_t"> - </div>
+                        </td>
+                        <td id="Wette_BJ" class="td Croupier_inner">Wette</td>
+                        <td id="Point_Bj" class="td Croupier_inner">Points</td>
+                        <td class="td Croupier_inner phone">21</td>
+                    </tr>  
+                </table>
+            </div>  
+        </div>
+    </div>
+<script src="JavaS/BJ.js"> </script>
+</body>

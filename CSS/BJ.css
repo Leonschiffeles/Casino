@@ -1,0 +1,137 @@
+.B_jk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(../Bild/BJ.jpeg);
+    background-size: cover;
+}
+
+.Kart_platz{
+    height: 70%;
+    width: 80%;
+    background-color: cadetblue;
+    border: 2px solid white;
+    border-radius: 7vw;
+}
+
+.Kart_platz_display{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(95, 160, 114);
+    border: 5px solid rgb(228, 8, 8);
+    border-radius: 7vw;
+}
+
+.td {
+    text-align: center;
+    border: 2px solid white;
+    width: 12%;
+    font-size: 2.5vw;
+    color: white;
+    transition: background-color 0.3s ease-in;
+    &:first-child{
+        border: none;
+    }
+    &:last-child{
+        border: none;
+    }
+}
+
+.Wette_BJ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    background-color: brown;
+    border: 1px solid white;
+    transition: background-color 0.3s ease-in;
+    color: white;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+.Kart_platz_Croupier{
+    height: 25%;
+    width: 12%;
+}
+
+.Croupier_inner_suit{
+    height: 10%;
+    width: 99%;
+    font-size: 3px;
+    color: transparent;
+}
+
+.Kart_platz_Spieler{
+    height: 50%;
+    width: 12%;
+}
+
+.Card_imj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+}
+
+.Card_imj_inner{
+    height: 80%;
+    width: 80%;
+}
+
+.Card_zahl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 40%;
+    width: 100%;
+}
+
+.Kart_platz_Interaction{
+    height: 25%;
+    width: 12%;
+}
+
+.pointerr{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .B_jk {
+        height: 99vh;
+        height: 99vh;
+    }
+    .Kart_platz{
+        min-height: 100%;
+        min-width: 100%;
+        border-radius: 0;
+    }
+
+    .Kart_platz_display{
+        border-radius: 0;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .Card_imj_inner{
+        height: 40%;
+    }
+
+    .td {
+        width: 20%;
+        font-size: 5vw;
+        font-weight: bold;
+    }
+
+    .Wette_BJ{
+        font-size: 5vw;
+        font-weight: bold;
+    }
+} 
