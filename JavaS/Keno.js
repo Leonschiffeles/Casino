@@ -129,13 +129,13 @@ function pruf(){
 
 function claer(){
 	whale.forEach(element => { 
-		document.getElementById('Z-' + element).style.backgroundColor = '#646C6E';
+		document.getElementById('Z-' + element).style.background = 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)';
 	});
 	rend.forEach(element => { 
-		document.getElementById('Z-' + element).style.backgroundColor = '#646C6E';
+		document.getElementById('Z-' + element).style.background = 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)';
 	});
 	res.forEach(element => { 
-		document.getElementById('Z-' + element).style.backgroundColor = '#646C6E';
+		document.getElementById('Z-' + element).style.background = 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)';
 	});
 
 	const b = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
@@ -145,4 +145,5 @@ function claer(){
 	
 	whale.splice(0,25);
 	rend.splice(0,25);
+	res.splice(0,21)
 }

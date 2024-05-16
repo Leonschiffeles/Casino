@@ -1,6 +1,6 @@
 .Kenno {
     height: 100%;
-    width: 15%;
+    width: 25%;
     background-color: #4D6F8A;
 }
 
@@ -73,6 +73,10 @@
     font-size: 2vw;
     cursor: pointer;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+    &:hover {
+        background: linear-gradient(90deg, rgb(69, 68, 93) 0%, rgb(54, 54, 117) 35%, rgb(41, 81, 88) 100%);
+    }
 }
 
 .Kenno_Midl_Interaktion {
@@ -134,4 +138,9 @@
         border-radius: 50%;
         font-size: 4vw;
     }
+
+    .plus {
+        font-size: 4vw;
+    }
+
 } 
