@@ -47,9 +47,6 @@ function sup(zhale){
 		alert('HO HO HO');
 	}
 
-	console.log(whale + ' ' + 'whaleeeeee ');
-	console.log(whale.length + ' ' + 'whaleeeeee length ');
-
 	whale.push(zhale);
 	document.getElementById('Z-' + zhale).style.background = 'linear-gradient(90deg, #0d96ec 0%, rgba(85,118,156,1) 100%)';
 }
@@ -73,52 +70,52 @@ function pruf(){
 			const lang = res.length; 	
 			switch (lang) {
 				case 20:
-					coins = wette * 200; 
+					coins += wette * 200; 
 					break;
 				case 19:
-					coins = wette * 190; 
+					coins += wette * 190; 
 					break;
 				case 18:
-					coins = wette * 180; 
+					coins += wette * 180; 
 					break;
 				case 17:
-					coins = wette * 170; 
+					coins += wette * 170; 
 					break;
 				case 16:
-					coins = wette * 160; 
+					coins += wette * 160; 
 					break;
 				case 15:
-					coins = wette * 50; 
+					coins += wette * 50; 
 					break;
 				case 14:
-					coins = wette * 40; 
+					coins += wette * 40; 
 					break;
 				case 13:
-					coins = wette * 30; 
+					coins += wette * 30; 
 					break;
 				case 12:
-					coins = wette * 20; 
+					coins += wette * 20; 
 					break;
 				case 11:
-					coins = wette * 11; 
+					coins += wette * 11; 
 					break;
 				case 10:
-					coins = wette * 10; 
+					coins += wette * 10; 
 					break;
 				case 9:
-					coins = wette * 9; 
+					coins += wette * 9; 
 					break;	
 				case 8:
-					coins = wette * 8; 
+					coins += wette * 8; 
 					break;
 				case 7:
-					coins = wette * 7; 
+					coins += wette * 7; 
 					break;
 				case 6:
-					coins = wette * 5; 
+					coins += wette * 5; 
 					break;
 				case 5:
-					coins = wette * 3; 
+					coins += wette * 3; 
 					break;
 				default:
 					coins -= wette;
@@ -135,21 +132,16 @@ function pruf(){
 	
 		const randomZahl = Math.floor(Math.random() * nummere.length);
 		const spinResult = nummere[randomZahl];
-		
-		console.log(spinResult);
 
 		if (rend.includes(spinResult)){
 			spinResult = spinResult - 1;
  		}
 		  
 		rend.push(spinResult);
-		console.log(rend + ' ' + 'rend iz sort');
 	
 		document.getElementById('Z-' + spinResult).style.background = 'linear-gradient(90deg, #D84B37 0%, #222224 100%)';
-		console.log(spinResult + ' ' + 'spinResult');
 	
 		const b = rend.length;
-		console.log(b + ' ' + ' b REnd Length');
 		document.getElementById('b' + b).textContent = spinResult;
 	}
 }
@@ -162,7 +154,7 @@ function claer(){
 		document.getElementById('Z-' + element).style.background = 'linear-gradient(90deg,#222224 0%, #4D6F8A 35%, #646C6E 100%)';
 	});
 	res.forEach(element => { 
-		document.getElementById('Z-' + element).style.background = 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)';
+		document.getElementById('Z-' + element).style.background = 'linear-gradient(90deg,#222224 0%, #4D6F8A 35%, #646C6E 100%)';
 	});
 
 	const b = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]

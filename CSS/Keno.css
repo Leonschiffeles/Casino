@@ -82,13 +82,11 @@
 .Kenno_Midl_Interaktion_Oben {
     height: 5%;
     width: 100%;
-    border: 2px solid white;
 }
 
 .Kenno_Midl_Interaktion {
     height: 10%;
     width: 100%;
-    border: 2px solid white;
 }
 
 .Midl_Interaktion_Oben{ 
@@ -98,7 +96,8 @@
 }
 
 .Midl_Interaktion_Oben td {
-    border: 1px solid green;
+    color: white;
+    border: 1px solid white;
     text-align: center;
     height: 100%;
     width: 50%;
@@ -112,7 +111,8 @@
 }
 
 .Midl_Interaktion td {
-    border: 1px solid green;
+    color: white;
+    border: 1px solid white;
     text-align: center;
     height: 100%;
     width: 20%;
@@ -145,8 +145,12 @@
         border: 1px solid rgb(160, 52, 13);
     }
 
+    .Midl_Interaktion_Oben td{
+        color: #214D68;
+    }
+
     .plus {
-        font-size: 4vw ;
+        font-size: 5vw;
         font-weight: 900;
         color: #214D68;
     }
