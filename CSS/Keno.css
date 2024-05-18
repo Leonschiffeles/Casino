@@ -60,7 +60,7 @@
 }
 
 .Kenno_Table {
-    height: 80%;
+    height: 85%;
     width: 100%;
     border: 2px solid #214D68;
 }
@@ -72,48 +72,52 @@
     color: azure;
     font-size: 2vw;
     cursor: pointer;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg,#222224 0%, #4D6F8A 35%, #646C6E 100%);
 
     &:hover {
         background: linear-gradient(90deg, rgb(69, 68, 93) 0%, rgb(54, 54, 117) 35%, rgb(41, 81, 88) 100%);
     }
 }
 
-.Kenno_Midl_Interaktion {
-    height: 20%;
+.Kenno_Midl_Interaktion_Oben {
+    height: 5%;
     width: 100%;
-    background-color: cadetblue;
     border: 2px solid white;
 }
 
-.Midl_Interaktion {
+.Kenno_Midl_Interaktion {
+    height: 10%;
+    width: 100%;
+    border: 2px solid white;
+}
+
+.Midl_Interaktion_Oben{ 
+    background-color: #D84B37;
     height: 100%;
     width: 100%;
-    background-color: azure;
 }
 
-.plus {
-    font-size: 2vw;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 33.3%;
+.Midl_Interaktion_Oben td {
+    border: 1px solid green;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+}
+
+.Midl_Interaktion {
+
+    background-color: #D84B37;
+    height: 100%;
     width: 100%;
-    border: 2px solid #D84B37;
-    border-radius: 20%;
-    background: linear-gradient(90deg, rgba(0,155,255,0.4431897759103641) 0%, rgb(19, 27, 77) 65%, rgb(23, 77, 87) 100%);
 }
-
 
 .Midl_Interaktion td {
+    border: 1px solid green;
+    text-align: center;
     height: 100%;
     width: 20%;
-    border: 2px solid black;
 }
  
-
 .tb {
     text-align: center;
     color: #D84B37;
@@ -135,12 +139,20 @@
     }       
     
     .Kenno_Table  td {
-        border-radius: 50%;
-        font-size: 4vw;
+        font-size: 5vw;
+        font-weight: bold;
+        color: #222224;
+        border: 1px solid rgb(160, 52, 13);
     }
 
     .plus {
-        font-size: 4vw;
+        font-size: 4vw ;
+        font-weight: 900;
+        color: #214D68;
+    }
+
+    .ps {
+        font-size: 4vw !important;
     }
 
 } 

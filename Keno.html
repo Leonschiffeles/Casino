@@ -82,6 +82,14 @@
             </div>
         </div>
         <div class="Kenno_Midl">
+            <div class="Kenno_Midl_Interaktion_Oben">
+                <table class="Midl_Interaktion_Oben">
+                    <tr class="#">
+                        <td class="plus ps" id="coins"></td>
+                        <td class="plus ps" id="wette"></td>
+                    </tr>
+                </table>
+            </div>
                 <table class="Kenno_Table">
                     <tr class="#">
                         <td onclick="sup('1')" class="er" id="Z-1">1</td>
@@ -180,18 +188,14 @@
                         <td onclick="sup('80')" class="#" id="Z-80">80</td>
                     </tr>
                 </table>
-            <div class="Kenno_Midl_Interaktion">
-                <table class="Midl_Interaktion" >
+            <div class="Kenno_Midl_Interaktion ">
+                <table class="Midl_Interaktion">
                     <tr class="#">
-                        <td onclick="pruf()" class="Midl_Interaktion_But But_t" id="Spin"> RENDOM</td>
-                        <td class="Midl_Interaktion_But" id="coins"></td>
-                        <td class="Midl_Interaktion_But" id="#"></td>
-                        <td class="Midl_Interaktion_But"> 
-                            <div  class="plus But_t" id="plus"> + </div> 
-                            <div  class="plus" id="wette"></div> 
-                            <div  class="plus But_t" id="minus"> - </div> 
-                        </td>
-                        <td onclick="claer()" class="Midl_Interaktion_But But_t" id="#"> Clear</td>
+                        <td onclick="pruf()" class="plus But_t">Spin</td>
+                        <td onclick="wette_plus()" class=" plus But_t"> + </td>
+                        <td class="#"> Animat </td>
+                        <td onclick="wette_minus()" class="plus But_t"> - </td>
+                        <td onclick="claer()" class="plus But_t"> Clear</td>
                     </tr>
                 </table>
             </div>
@@ -219,4 +223,4 @@
     </div>
 <script src="JavaS/Keno.js"> </script>
 </body>
-</html>/
+</html>
