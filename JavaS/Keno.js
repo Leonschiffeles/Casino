@@ -47,6 +47,8 @@ function sup(zhale){
 		alert('HO HO HO');
 	}
 
+	console.log(whale);
+
 	whale.push(zhale);
 	document.getElementById('Z-' + zhale).style.background = 'linear-gradient(90deg, #0d96ec 0%, rgba(85,118,156,1) 100%)';
 }
@@ -70,52 +72,49 @@ function pruf(){
 			const lang = res.length; 	
 			switch (lang) {
 				case 20:
-					coins += wette * 200; 
+					coins += 10000; 
 					break;
 				case 19:
-					coins += wette * 190; 
+					coins += 18000; 
 					break;
 				case 18:
-					coins += wette * 180; 
+					coins += 16000; 
 					break;
 				case 17:
-					coins += wette * 170; 
+					coins += 14000; 
 					break;
 				case 16:
-					coins += wette * 160; 
+					coins += 12000; 
 					break;
 				case 15:
-					coins += wette * 50; 
+					coins += 11000; 
 					break;
 				case 14:
-					coins += wette * 40; 
+					coins += 9000; 
 					break;
 				case 13:
-					coins += wette * 30; 
+					coins += 8000; 
 					break;
 				case 12:
-					coins += wette * 20; 
+					coins += 6000; 
 					break;
 				case 11:
-					coins += wette * 11; 
+					coins += 5500; 
 					break;
 				case 10:
-					coins += wette * 10; 
+					coins += 5000; 
 					break;
 				case 9:
-					coins += wette * 9; 
+					coins += 1500; 
 					break;	
 				case 8:
-					coins += wette * 8; 
+					coins += 1000; 
 					break;
 				case 7:
-					coins += wette * 7; 
-					break;
-				case 6:
-					coins += wette * 5; 
+					coins += 750; 
 					break;
 				case 5:
-					coins += wette * 3; 
+					coins += 500; 
 					break;
 				default:
 					coins -= wette;
@@ -126,7 +125,7 @@ function pruf(){
 			document.getElementById('Z-' + element).style.background = 'radial-gradient(circle, #0d96ec 0%, #BE0D07 100%)';
 		});
 
-		document.querySelector('#coins').textContent = 'Coins' + ' '+ coins;
+		document.querySelector('#coins').textContent = coins + ' '+'$';
 		
 		}
 	
@@ -140,9 +139,6 @@ function pruf(){
 		rend.push(spinResult);
 	
 		document.getElementById('Z-' + spinResult).style.background = 'linear-gradient(90deg, #D84B37 0%, #222224 100%)';
-	
-		const b = rend.length;
-		document.getElementById('b' + b).textContent = spinResult;
 	}
 }
 
@@ -150,19 +146,18 @@ function claer(){
 	whale.forEach(element => { 
 		document.getElementById('Z-' + element).style.background = 'linear-gradient(90deg,#222224 0%, #4D6F8A 35%, #646C6E 100%)';
 	});
+	
+	whale.splice(0,25);
+
 	rend.forEach(element => { 
 		document.getElementById('Z-' + element).style.background = 'linear-gradient(90deg,#222224 0%, #4D6F8A 35%, #646C6E 100%)';
 	});
+
+	rend.splice(0,25);
+
 	res.forEach(element => { 
 		document.getElementById('Z-' + element).style.background = 'linear-gradient(90deg,#222224 0%, #4D6F8A 35%, #646C6E 100%)';
 	});
-
-	const b = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-	b.forEach(element => {	
-		document.getElementById('b' +  element).textContent = " ";
-	});
 	
-	whale.splice(0,25);
-	rend.splice(0,25);
 	res.splice(0,21)
 }

@@ -1,7 +1,7 @@
 .Kenno {
     height: 100%;
     width: 25%;
-    background-color: #4D6F8A;
+    border: 4px solid #214D68;
 }
 
 .colr {
@@ -14,7 +14,10 @@
 } 
 
 .Kenno_Logo {
-    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
     width: 100%;
 }
 
@@ -23,34 +26,9 @@
     justify-content: center;
     align-items: center;
     padding:5%;
-    height: 60%;
+    height: 80%;
     width: 100%;
     background-color: aliceblue
-}
-
-.Nach {
-    margin: 5%;
-    height: 100%;
-    width: 20%;
-    writing-mode: vertical-rl;
-	text-orientation: upright;
-    color: #4D6F8A;
-    font-size: 3vw;
-}
-
-.Balls {
-    text-align: center;
-    height: 95%;
-    width: 30%;
-    background-color: #D84B37;
-}
-
-.Balls  td {
-    height: 10%;
-    width: 100%;
-    border-radius: 50%;
-    border: 1px solid #214D68;
-    background-color: bisque;
 }
 
 .Kenno_Midl {
@@ -60,7 +38,7 @@
 }
 
 .Kenno_Table {
-    height: 85%;
+    height: 70%;
     width: 100%;
     border: 2px solid #214D68;
 }
@@ -80,12 +58,26 @@
 }
 
 .Kenno_Midl_Interaktion_Oben {
-    height: 5%;
+    height: 20%;
     width: 100%;
 }
 
-.Kenno_Midl_Interaktion {
-    height: 10%;
+.Midl_Interaktion_Oben_IMG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #646C6E;
+    width: 100%;
+    height: 100%;
+}
+
+.Midl_Interaktion_IMG {
+    height: 100%;
+    width: 100%;
+}
+
+.Midl_Interaktion_Oben_div{
+    height: 100%;
     width: 100%;
 }
 
@@ -101,6 +93,11 @@
     text-align: center;
     height: 100%;
     width: 50%;
+}
+
+.Kenno_Midl_Interaktion {
+    height: 10%;
+    width: 100%;
 }
 
 .Midl_Interaktion {
@@ -125,6 +122,10 @@
     font-size: 1.32vw;
 }
 
+.Z {
+    background: #646C6E;
+}
+
 @media screen and (max-width: 768px) {
     .Kenno_Midl {
         width: 100%;
@@ -138,11 +139,23 @@
         display: block;
     }       
     
+    .Kenno_Table {
+        height: 85%;
+    }
+
     .Kenno_Table  td {
         font-size: 5vw;
         font-weight: bold;
         color: #222224;
         border: 1px solid rgb(160, 52, 13);
+    }
+
+    .Kenno_Midl_Interaktion_Oben{
+        height: 5%;
+    }
+
+    .Midl_Interaktion_Oben_div{
+        display: block !important;
     }
 
     .Midl_Interaktion_Oben td{
