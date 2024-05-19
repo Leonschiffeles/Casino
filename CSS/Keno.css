@@ -1,7 +1,6 @@
 .Kenno {
     height: 100%;
     width: 25%;
-    border: 4px solid #214D68;
 }
 
 .colr {
@@ -17,6 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: #004E4E;
     height: 20%;
     width: 100%;
 }
@@ -66,7 +67,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #646C6E;
+    background-color: #004E4E;
     width: 100%;
     height: 100%;
 }
@@ -108,22 +109,57 @@
 }
 
 .Midl_Interaktion td {
+    font-size: 2vw;
+    font-weight: bold;
     color: white;
     border: 1px solid white;
     text-align: center;
     height: 100%;
     width: 20%;
 }
- 
-.tb {
-    text-align: center;
-    color: #D84B37;
-    background-color: #4D6F8A;
-    font-size: 1.32vw;
+
+.Coins_Oben {
+    width: 98%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3BC5C7;
+    color: #AA4C4E;
+    font-size: 3vw;
+    font-weight: bold;
+    font-variant-numeric: oldstyle-nums;
+    border: 8px ridge #D84B37;
 }
 
-.Z {
-    background: #646C6E;
+.Animat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98%;
+    width: 98%;
+}
+
+.Animat_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 4vw;
+    color: transparent;
+    height: 60%;
+    width: 24%;
+    border-radius: 50%;
+    border: 8px ridge #D84B37;
+
+}
+
+.Tabl {
+    height: 98%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    border: 8px ridge #D84B37;
 }
 
 @media screen and (max-width: 768px) {
@@ -163,9 +199,26 @@
     }
 
     .plus {
-        font-size: 5vw;
-        font-weight: 900;
-        color: #214D68;
+        font-size: 5vw !important;
+        font-weight: 900 !important;
+    }
+
+    .plus_animat {
+        height: 100%;
+        width: 100%;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .Animat_1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        width: 80%;
+        border-radius: 50%;
+        border: 2px solid rgb(240, 235, 235);
     }
 
     .ps {

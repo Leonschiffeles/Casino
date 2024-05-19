@@ -6,9 +6,13 @@ const nummere = ['1','2','3','4','5','6','7','8','9','10',
 
 var coins = 50;
 document.querySelector('#coins').textContent = 'Coins ' + ' ' + coins;
+document.querySelector('#Coins_Oben').textContent = coins + '.00';
+
 
 var wette = 5;
 document.querySelector('#wette').textContent = wette + ' ' + 'Wette';
+document.querySelector('#wettw_unter').innerHTML = wette;
+
 
 let whale = [];
 let rend = [];
@@ -26,6 +30,7 @@ function wette_plus(){
         wette ++ ;
     }
     document.querySelector('#wette').innerHTML = wette + ' ' + 'Wette';
+    document.querySelector('#wettw_unter').innerHTML = wette;
     return (wette);
 }
 
@@ -38,7 +43,50 @@ function wette_minus(){
         wette -- ;
     }
     document.querySelector('#wette').innerHTML = wette + ' ' + 'Wette';
+    document.querySelector('#wettw_unter').innerHTML = wette;
     return (wette);
+}
+
+function animat(){
+    g1 = window.setInterval(gr, 1000);	
+	g2 = window.setInterval(gr_1, 1080);	
+	g3 = window.setInterval(gr_2, 1130);	
+	g4 = window.setInterval(gr_3, 1200);	
+	
+	if(rend.length == 20){
+		clearInterval(g1);
+		clearInterval(g2);
+		clearInterval(g3);
+		clearInterval(g4);
+	 }
+
+	function gr(){
+		document.querySelector('#A-41').classList.remove('gr_3');
+		document.querySelector('#A-11').classList.add('gr');
+		document.querySelector('#A-4').classList.remove('gr_3');
+		document.querySelector('#A-1').classList.add('gr');
+	}
+
+	function gr_1(){
+		document.querySelector('#A-11').classList.remove('gr');
+		document.querySelector('#A-21').classList.add('gr_1');
+		document.querySelector('#A-1').classList.remove('gr');
+		document.querySelector('#A-2').classList.add('gr_1');
+	}
+
+	function gr_2(){
+		document.querySelector('#A-21').classList.remove('gr_1');
+		document.querySelector('#A-31').classList.add('gr_2');
+		document.querySelector('#A-2').classList.remove('gr_1');
+		document.querySelector('#A-3').classList.add('gr_2');
+	}
+
+	function gr_3(){
+		document.querySelector('#A-31').classList.remove('gr_2');
+		document.querySelector('#A-41').classList.add('gr_3');
+		document.querySelector('#A-3').classList.remove('gr_2');
+		document.querySelector('#A-4').classList.add('gr_3');
+	}
 }
 
 function sup(zhale){
@@ -54,7 +102,8 @@ function sup(zhale){
 }
 
 function pruf(){
-	zt = window.setInterval(rendom_bal, 100);
+	zt = window.setInterval(rendom_bal, 2000);
+	animat();
 
 	function rendom_bal(){
 		
@@ -125,7 +174,9 @@ function pruf(){
 			document.getElementById('Z-' + element).style.background = 'radial-gradient(circle, #0d96ec 0%, #BE0D07 100%)';
 		});
 
-		document.querySelector('#coins').textContent = coins + ' '+'$';
+		document.querySelector('#coins').textContent = 'Coins ' + ' ' + coins;
+		document.querySelector('#Coins_Oben').textContent = coins + '.00';
+
 		
 		}
 	
@@ -159,5 +210,5 @@ function claer(){
 		document.getElementById('Z-' + element).style.background = 'linear-gradient(90deg,#222224 0%, #4D6F8A 35%, #646C6E 100%)';
 	});
 	
-	res.splice(0,21)
+	res.splice(0,21);
 }
