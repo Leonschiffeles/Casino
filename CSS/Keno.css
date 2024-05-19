@@ -162,6 +162,14 @@
     border: 8px ridge #D84B37;
 }
 
+.Name_Table {
+    font-variant-numeric: oldstyle-nums;
+    text-align: center;
+    height: 10%;
+    font-size: 3vw;
+    color: #AA4C4E;
+}
+
 @media screen and (max-width: 768px) {
     .Kenno_Midl {
         width: 100%;
