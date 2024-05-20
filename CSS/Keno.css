@@ -164,10 +164,36 @@
 
 .Name_Table {
     font-variant-numeric: oldstyle-nums;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 15%;
+    font-size: 3vw;
+    color: #D84B37;
+    background-color: #222224;
+}
+
+.His_Table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    width: 98%;
+}
+
+.His_Table_Table {
+    height: 90%;
+    width: 90%;
+    border: 3px ridge #D84B37;
+}
+
+.His_Table_Table td {
     text-align: center;
     height: 10%;
-    font-size: 3vw;
-    color: #AA4C4E;
+    width: 50%;
+    border:1px solid #AA4C4E;
+    color: #D84B37;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {

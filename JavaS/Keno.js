@@ -19,9 +19,30 @@ let rend = [];
 
 let res = [];
 
-let prufe = 0;
+let prufe = 1;
+
+function history(){
+	const hist = [1,2,3,4,5,6,7,8,9,10];
+
+	if(prufe >= 11){
+		prufe = prufe / prufe;
+		hist.forEach(element => { 
+			document.getElementById('h-' +  element).textContent = " ";
+			document.getElementById('h-' +  element + '-' + element).textContent = " ";
+		}); 
+	}
+
+	console.log(res.length);
+
+	document.getElementById('h-' +  prufe).textContent = 'Rund' + ' ' +  prufe;
+	document.getElementById('h-' +  prufe + '-' + prufe).textContent = res.length;
+
+	prufe ++;
+}
 
 function wette_plus(){
+
+	Vo_C_Plus();
 
     if (wette >= coins){
         alert('Du hast kein mehrer Geld');
@@ -35,6 +56,8 @@ function wette_plus(){
 }
 
 function wette_minus(){
+
+	Vo_C_Minus();
 
     if (wette <= 0){
         alert('Eror');
@@ -90,6 +113,9 @@ function animat(){
 }
 
 function sup(zhale){
+
+	Vo_C_Minus();
+
 	if (whale.length >= 20){
 		zhale = 0;
 		alert('HO HO HO');
@@ -102,7 +128,8 @@ function sup(zhale){
 }
 
 function pruf(){
-	zt = window.setInterval(rendom_bal, 2000);
+
+	zt = window.setInterval(rendom_bal, 100);
 	animat();
 
 	function rendom_bal(){
@@ -121,63 +148,83 @@ function pruf(){
 			const lang = res.length; 	
 			switch (lang) {
 				case 20:
-					coins += 10000; 
+					coins += wette * 20;
+					Vo_C_Win(); 
 					break;
 				case 19:
-					coins += 18000; 
+					coins += wette * 19;
+					Vo_C_Win();
 					break;
 				case 18:
-					coins += 16000; 
+					coins += wette * 18;
+					Vo_C_Win();
 					break;
 				case 17:
-					coins += 14000; 
+					coins += wette * 17;
+					Vo_C_Win(); 
 					break;
 				case 16:
-					coins += 12000; 
+					coins += wette * 16;
+					Vo_C_Win(); 
 					break;
 				case 15:
-					coins += 11000; 
+					coins += wette * 15;
+					Vo_C_Win(); 
 					break;
 				case 14:
-					coins += 9000; 
+					coins += wette * 14;
+					Vo_C_Win(); 
 					break;
 				case 13:
-					coins += 8000; 
+					coins += wette * 13;
+					Vo_C_Win();
 					break;
 				case 12:
-					coins += 6000; 
+					coins += wette * 12;
+					Vo_C_Win(); 
 					break;
 				case 11:
-					coins += 5500; 
+					coins += wette * 11;
+					Vo_C_Win(); 
 					break;
 				case 10:
-					coins += 5000; 
+					coins += wette * 10;
+					Vo_C_Win(); 
 					break;
 				case 9:
-					coins += 1500; 
+					coins += wette * 9; 
+					Vo_C_Win();
 					break;	
 				case 8:
-					coins += 1000; 
+					coins += wette * 8;
+					Vo_C_Win(); 
 					break;
 				case 7:
-					coins += 750; 
+					coins += wette * 7;
+					Vo_C_Win(); 
+					break;
+				case 6:
+					coins += wette * 6;
+					Vo_C_Win(); 
 					break;
 				case 5:
-					coins += 500; 
+					coins += wette * 5;
+					Vo_C_Win(); 
 					break;
 				default:
 					coins -= wette;
+					Vo_C_Los();
 					break;
 			}
 	
-		res.forEach(element => { 
-			document.getElementById('Z-' + element).style.background = 'radial-gradient(circle, #0d96ec 0%, #BE0D07 100%)';
-		});
+			res.forEach(element => { 
+				document.getElementById('Z-' + element).style.background = 'radial-gradient(circle, #0d96ec 0%, #BE0D07 100%)';
+			});
 
-		document.querySelector('#coins').textContent = 'Coins ' + ' ' + coins;
-		document.querySelector('#Coins_Oben').textContent = coins + '.00';
+			document.querySelector('#coins').textContent = 'Coins ' + ' ' + coins;
+			document.querySelector('#Coins_Oben').textContent = coins + '.00';
 
-		
+			history();
 		}
 	
 		const randomZahl = Math.floor(Math.random() * nummere.length);
@@ -211,4 +258,28 @@ function claer(){
 	});
 	
 	res.splice(0,21);
+}
+
+function Vo_C_Plus(){
+    const audioElement = document.createElement('audio');
+    audioElement.src = 'Vocale/C-plus.mp3';
+    audioElement.play();
+}
+
+function Vo_C_Minus(){
+    const audioElement = document.createElement('audio');
+    audioElement.src = 'Vocale/C-Minus.mp3';
+    audioElement.play();
+}
+
+function Vo_C_Win(){
+    const audioElement = document.createElement('audio');
+    audioElement.src = 'Vocale/C-Win.mp3';
+    audioElement.play();
+}
+
+function Vo_C_Los(){
+    const audioElement = document.createElement('audio');
+    audioElement.src = 'Vocale/C-Los.mp3';
+    audioElement.play();
 }
