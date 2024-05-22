@@ -298,7 +298,7 @@ function Pruf(){
         const n =  prompt("Du hast kein mehr Geld!" + 
         "Wilst du noch ein mal probieren?" + "Ya oder nein");
         switch (n) {
-            case 'Ya':
+            case 'Ja':
             alert("Gratulieren!" + "Du hast noc 10 points bekommen");
             Vo_Coins();
             location.reload();
@@ -309,27 +309,27 @@ function Pruf(){
             break;
     }
    }else if( Spieler >= Croupier_Zahle && Spieler <= 21 && Croupier_Zahle <= 21){
-        Vo_C_Win();
+        window.setTimeout(Vo_C_Win, 200);
         coins_bj += wette_bj;
         document.querySelector('#Nachricht').innerHTML = "Gewin";
    }else if ( Spieler >= 22){
-        Vo_C_Los();
+        window.setTimeout(Vo_C_Los, 200);
         coins_bj -= wette_bj;
         document.querySelector('#Nachricht').innerHTML = "Gelost";
     }else if ( Spieler == Croupier_Zahle && Spieler <= 21 && Croupier_Zahle <= 21){
-        Vo_C_Win();
+        window.setTimeout(Vo_C_Win, 200);
         coins_bj += 1;
         document.querySelector('#Nachricht').innerHTML = "Glaiche";
    }else if (Croupier_Zahle >= 22){
-        Vo_C_Win();
+        window.setTimeout(Vo_C_Win, 200);
         coins_bj += wette_bj + 3;
         document.querySelector('#Nachricht').innerHTML = "Gewin";
    }else if (Croupier_Zahle == 21){
-        Vo_C_Los();
+        window.setTimeout(Vo_C_Los, 200);
         coins_bj -= wette_bj + 1;
         document.querySelector('#Nachricht').innerHTML = "Gelost";
     }else{
-        Vo_C_Los();
+        window.setTimeout(Vo_C_Los, 200);
         coins_bj -= wette_bj;
         document.querySelector('#Nachricht').innerHTML = "Gelost";
    }

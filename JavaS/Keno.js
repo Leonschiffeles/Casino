@@ -129,14 +129,17 @@ function sup(zhale){
 
 function pruf(){
 
-	zt = window.setInterval(rendom_bal, 100);
+	zt = window.setInterval(rendom_bal, 2200);
 	animat();
+	Vo_30sec();
 
 	function rendom_bal(){
-		
+		Vo_Eror();
 		if(rend.length >= 20){
 			clearInterval(zt);
+			Vo_Ende();
 			alert('HOHOHO');
+
 	
 			for (let i = 0; i < whale.length; i++) 
 				for (let j = 0; j < rend.length; j++) {
@@ -281,5 +284,23 @@ function Vo_C_Win(){
 function Vo_C_Los(){
     const audioElement = document.createElement('audio');
     audioElement.src = 'Vocale/C-Los.mp3';
+    audioElement.play();
+}
+
+function Vo_Eror() {
+    const audioElement = document.createElement('audio');
+    audioElement.src = 'Vocale/Eror.mp3';
+    audioElement.play();
+}
+
+function Vo_30sec() {
+    const audioElement = document.createElement('audio');
+    audioElement.src = 'Vocale/30sec.mp3';
+    audioElement.play();
+}
+
+function Vo_Ende() {
+    const audioElement = document.createElement('audio');
+    audioElement.src = 'Vocale/Ende.mp3';
     audioElement.play();
 }

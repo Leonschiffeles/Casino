@@ -53,6 +53,12 @@
     color: transparent;
 }
 
+.OrangBlik{
+    transition: 0.3ms;
+    background-color: #fdfaf67e !important;
+    box-shadow: 0 0 150px #FDFAF6;
+}
+
 .gr {
     background-color: #C9CECF;
     color: white !important;
