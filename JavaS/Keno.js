@@ -71,19 +71,22 @@ function wette_minus(){
 }
 
 function animat(){
-    g1 = window.setInterval(gr, 1000);	
-	g2 = window.setInterval(gr_1, 1080);	
-	g3 = window.setInterval(gr_2, 1130);	
-	g4 = window.setInterval(gr_3, 1200);	
+
+	g1 = window.setInterval(gr, 1000);	
+	g2 = window.setInterval(gr_1, 1100);	
+	g3 = window.setInterval(gr_2, 1200);	
+	g4 = window.setInterval(gr_3, 1300);	
 	
-	if(rend.length == 20){
-		clearInterval(g1);
-		clearInterval(g2);
-		clearInterval(g3);
-		clearInterval(g4);
-	 }
 
 	function gr(){
+
+		if(rend.length === 20){
+			clearInterval(g1);
+			clearInterval(g2);
+			clearInterval(g3);
+			clearInterval(g4);
+		 }
+
 		document.querySelector('#A-41').classList.remove('gr_3');
 		document.querySelector('#A-11').classList.add('gr');
 		document.querySelector('#A-4').classList.remove('gr_3');
@@ -91,6 +94,7 @@ function animat(){
 	}
 
 	function gr_1(){
+
 		document.querySelector('#A-11').classList.remove('gr');
 		document.querySelector('#A-21').classList.add('gr_1');
 		document.querySelector('#A-1').classList.remove('gr');
@@ -105,6 +109,7 @@ function animat(){
 	}
 
 	function gr_3(){
+
 		document.querySelector('#A-31').classList.remove('gr_2');
 		document.querySelector('#A-41').classList.add('gr_3');
 		document.querySelector('#A-3').classList.remove('gr_2');
@@ -118,7 +123,7 @@ function sup(zhale){
 
 	if (whale.length >= 20){
 		zhale = 0;
-		alert('HO HO HO');
+		alert('Du hast schon 20 Zahlen gewahlt!...');
 	}
 
 	console.log(whale);
@@ -129,7 +134,7 @@ function sup(zhale){
 
 function pruf(){
 
-	zt = window.setInterval(rendom_bal, 2200);
+	zt = window.setInterval(rendom_bal, 2000);
 	animat();
 	Vo_30sec();
 
@@ -138,9 +143,7 @@ function pruf(){
 		if(rend.length >= 20){
 			clearInterval(zt);
 			Vo_Ende();
-			alert('HOHOHO');
 
-	
 			for (let i = 0; i < whale.length; i++) 
 				for (let j = 0; j < rend.length; j++) {
 					if (whale[i] === rend[j]) {
